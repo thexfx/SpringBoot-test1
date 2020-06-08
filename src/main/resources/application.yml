@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: prod
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useSSL=false&nullCatalogMeansCurrent=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: 1234
+server:
+  port: 8181
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
